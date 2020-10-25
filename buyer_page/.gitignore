@@ -2,3 +2,4 @@ test_cases/
 .DS_Store
 __pycache__/
 buyer_page/__pycache__/
+seller_page/__pycache__/
