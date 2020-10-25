@@ -1,0 +1,39 @@
+
+<link rel="stylesheet" href="/static/css/login.css">
+
+
+{% extends "layout.html" %}
+{% load static %}
+
+
+{% block content %}
+<script>
+    var error = {{error|safe}}
+
+    if (error==1) {
+        alert("Wrong Username or Password. Please check again.")
+    }
+</script>
+<div class="module form-module">
+    <div class="pen-title">
+        <img src="/static/img/logo.png" />
+        <h1>PEOS</h1>
+    </div>
+
+
+    <div class="pure-u-1">
+    <form action="/login" class="pure-form pure-form-aligned" method="POST" >
+            {% csrf_token %}
+            <div class="pure-control-group">
+            {{form.username}}
+            </div>
+
+            <div class="pure-control-group">
+            {{form.password}}   
+            </div>
+            <button type="submit" class="pure-button pure-button-primary">Login</button>
+    </form>
+    </div>
+</div>
+
+{% endblock %}

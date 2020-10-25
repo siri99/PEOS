@@ -1,0 +1,22 @@
+body {
+  color: #666666;
+  font-family: 'Raleway';
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.item-image{
+    height:200px;
+}
+
+.item-category{
+    padding: 3px;
+    border:1px solid; 
+    height:230px;
+}
+
+.buffer1{
+    min-height: 30px;
+}
+
